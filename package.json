@@ -1,0 +1,23 @@
+{
+  "name": "task10less-master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "gulp-less": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0"
+  }
+}
