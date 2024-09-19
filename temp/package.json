@@ -10,15 +10,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bootstrap": "^5.3.3",
     "gulp-less": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "jquery": "^3.7.1",
-    "jquery-mask-plugin": "^1.14.16"
+    "jquery": "^3.7.1"
   },
   "devDependencies": {
     "grunt": "^1.6.1",
-    "grunt-contrib-less": "^3.0.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0"

@@ -408,23 +408,22 @@
           margin-bottom: 58px;
         }
 
-        .order-info-form-container {
-          .order-info-form {
-            .order-info-input {
-              width: 343px;
-            }
-
-            .order-info-button {
-              width: 343px;
-            }
+        .order-info-form {
+          .order-info-input {
+            width: 343px;
           }
+
+          .order-info-button {
+            width: 343px;
+          }
+
         }
       }
     }
   }
 
 
-  .footer {
+  .footer{
     .container {
       padding: 50px 15px;
       position: relative;
@@ -433,22 +432,18 @@
 
       .logo {
         text-align: center;
-
         .rights {
           margin: 0;
         }
-
         img {
           margin-bottom: 199px;
         }
       }
-
       .footer-instagram {
         position: absolute;
         top: 158px;
         left: calc(50% - 59px);
       }
-
       .phone {
         position: absolute;
         top: 100px;
@@ -459,57 +454,48 @@
 }
 
 @media screen and (max-width: 492px) {
-
-  .advantages {
-    .container {
-      .advantages-info {
-        justify-content: center;
-
-        .advantage {
-          margin-top: 42px;
-          margin-left: 0;
-          margin-right: 0;
-          width: 165px;
-        }
-      }
-    }
+  .advantages-info {
+    justify-content: space-between;
   }
 
-  .present {
-    .present-link {
-      .present-container {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 15px;
-
-        .present-image {
-          width: 32px;
-        }
-
-        .order-present {
-          right: 74px;
-          bottom: 30px;
-
-          .order-present-img {
-            width: 99px;
-          }
-
-          .order-present-text {
-            top: 8px;
-            left: 8px;
-            width: 84px;
-            font-size: 8px;
-
-          }
-        }
-      }
-    }
+  .advantage {
+    margin-top: 42px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 165px;
   }
 
-  .order .container .order-image-motion.big-berry {
+  .order-image-motion.big-berry {
     top: 228px;
     left: 289px;
+  }
+
+  .present-container {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 15px;
+
+  }
+
+  .order-present-img {
+    width: 99px;
+  }
+
+  .order-present-text {
+    top: 8px;
+    left: 8px;
+    width: 84px;
+    font-size: 8px;
+  }
+
+  .present-image {
+    width: 32px;
+  }
+
+  .order-present {
+    right: 74px;
+    bottom: 30px;
   }
 }
 
@@ -519,45 +505,33 @@
     grid-template-rows: 320px 265px 1fr;
   }
 
-  .title {
-    .container {
-      min-height: 600px;
-
-      .title-image {
-        top: 440px;
-      }
-    }
+  .title .container {
+    min-height: 600px;
   }
 
-  .advantages {
-    .container {
-      .advantages-image {
-        .advantages-image-img {
-          width: 270px;
-        }
-      }
-    }
+  .title-image {
+    top: 440px;
+
   }
 
-  .order {
-    .container {
-      .order-info {
-        .order-info-form-container {
-          .order-info-form {
-            .order-info-input {
-              width: 290px;
-            }
-
-            .order-info-button {
-              width: 290px;
-            }
-          }
-        }
-      }
-    }
+  .advantages-info {
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .order .container .order-image-motion.big-berry {
+  .advantages-image-img {
+    width: 270px;
+  }
+
+  .order-info-input {
+    width: 290px;
+  }
+
+  .order-info-button {
+    width: 290px;
+  }
+
+  .order-image-motion.big-berry {
     top: 220px;
     left: 218px;
   }

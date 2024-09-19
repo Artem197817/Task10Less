@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>macaroons</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="dist/styles/style.css">
-
+    <link rel="stylesheet" href="../dist/styles/style.css">
+<!--    <link rel="stylesheet" href="styles/adaptive.css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -14,7 +13,7 @@
 
         <div class="logo">
             <a href="#" class="logo-link">
-                <img src="images/logo.png" alt="logo" class="logo-img">
+                <img src="../images/logo.png" alt="logo" class="logo-img">
             </a>
         </div>
         <nav class="menu" id="menu">
@@ -43,7 +42,7 @@
             </ul>
         </nav>
         <div class="burger" id="burger">
-            <img src="images/burger.png" alt="burger">
+            <img src="../images/burger.png" alt="burger">
         </div>
         <div class="phone" id="phone">+375 (29) 368-98-68</div>
     </div>
@@ -61,7 +60,7 @@
             </div>
         </div>
         <div class="title-image">
-            <img src="images/macaroons-box.png" alt="макаруны" class="title-info-image-img">
+            <img src="../images/macaroons-box.png" alt="макаруны" class="title-info-image-img">
             <div class="title-image-circle-container">
                 <div class="title-image-circle circle1"></div>
                 <div class="title-image-circle circle2"></div>
@@ -84,7 +83,7 @@
             </div>
         </div>
         <div class="advantages-image">
-            <img src="images/macaroon-big.png" alt="макарун" class="advantages-image-img">
+            <img src="../images/macaroon-big.png" alt="макарун" class="advantages-image-img">
         </div>
         <div class="advantages-info">
             <div class="advantage">
@@ -135,7 +134,7 @@
         <div class="select-info">
             <div class="select-info-item">
                 <div class="select-info-item-image">
-                    <img src="images/macaroon1.png" alt="Макарун" class="select-info-item-img">
+                    <img src="../images/macaroon1.png" alt="Макарун" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Макарун с малиной</div>
                 <div class="select-info-item-container">
@@ -150,7 +149,7 @@
             </div>
             <div class="select-info-item">
                 <div class="select-info-item-image">
-                    <img src="images/macaroon2.png" alt="Макарун" class="select-info-item-img">
+                    <img src="../images/macaroon2.png" alt="Макарун" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Макарун с манго</div>
                 <div class="select-info-item-container">
@@ -165,7 +164,7 @@
             </div>
             <div class="select-info-item">
                 <div class="select-info-item-image">
-                    <img src="images/macaroon3.png" alt="Пирог" class="select-info-item-img">
+                    <img src="../images/macaroon3.png" alt="Пирог" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Пирог с ванилью</div>
                 <div class="select-info-item-container">
@@ -180,7 +179,7 @@
             </div>
             <div class="select-info-item">
                 <div class="select-info-item-image">
-                    <img src="images/macaroon4.png" alt="Пирог" class="select-info-item-img">
+                    <img src="../images/macaroon4.png" alt="Пирог" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Пирог с фисташками</div>
                 <div class="select-info-item-container">
@@ -199,10 +198,10 @@
 <section class="order">
     <div class="container">
         <div class="order-image-motion big-berry" id="big-berry">
-            <img src="images/berry-big.png" alt="клубника" class="order-image-motion-img">
+            <img src="../images/berry-big.png" alt="клубника" class="order-image-motion-img">
         </div>
         <div class="order-image">
-            <img src="images/macaroons.png" alt="макаруны" class="order-image-main">
+            <img src="../images/macaroons.png" alt="макаруны" class="order-image-main">
 
         </div>
         <div class="order-info">
@@ -210,25 +209,17 @@
             <div class="order-info-text">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
                 пекаря!
             </div>
-            <div class="order-info-form-container">
-                <form action="#" class="order-info-form needs-validation" novalidate>
-                    <h3 class="order-info-small-title ">Ваш выбор</h3>
-                    <input type="text" name="product" class="order-info-input form-control"
-                           placeholder="Напишите, что хотите заказать..." id="inputProduct" required>
-                    <div class="invalid-feedback product">Пожалуйста введите название продукта</div>
-                    <h3 class="order-info-small-title small-title2 ">Заполните данные для заказа</h3>
-                    <input type="text" name="name" class="order-info-input form-control" placeholder="Ваше имя"
-                           id="inputName" required>
-                    <div class="invalid-feedback name">Пожалуйста введите имя</div>
-                    <input type="text" name="phone" class="order-info-input form-control"
-                           placeholder="+375 (__) ___ - __ - __" id="inputPhone" required>
-                    <div class="invalid-feedback phone-client">Пожалуйста введите телефон</div>
-                    <button type="submit" class="button order-info-button">Оформить заказ</button>
-                </form>
-                <div class="order-success-info">3</div>
-            </div>
+            <form action="#" class="order-info-form">
+                <h3 class="order-info-small-title">Ваш выбор</h3>
+                <input type="text" name="product" class="order-info-input"
+                       placeholder="Напишите, что хотите заказать...">
+                <h3 class="order-info-small-title small-title2 ">Заполните данные для заказа</h3>
+                <input type="text" name="name" class="order-info-input" placeholder="Ваше имя">
+                <input type="text" name="phone" class="order-info-input" placeholder="+375 (__) ___ - __ - __">
+                <button type="submit" class="button order-info-button">Оформить заказ</button>
+            </form>
             <div class="order-image-motion small-berry">
-                <img src="images/berry-small.png" alt="клубника" class="order-image-motion-img">
+                <img src="../images/berry-small.png" alt="клубника" class="order-image-motion-img">
             </div>
         </div>
 
@@ -237,11 +228,11 @@
 <footer class="footer">
     <div class="container">
         <div class="logo">
-            <img src="images/logo.png" alt="logo" class="logo-img">
+            <img src="../images/logo.png" alt="logo" class="logo-img">
             <div class="rights">Все права защищены, 2020</div>
         </div>
         <a href="#" class="footer-instagram">
-            <img src="images/instagram.png" alt="instagram" class="footer-instagram-image">
+            <img src="../images/instagram.png" alt="instagram" class="footer-instagram-image">
             <div class="footer-instagram-text">Мы в Instagram</div>
         </a>
         <div class="phone">+375 (29) 368-98-68</div>
@@ -250,9 +241,9 @@
 <div class="present">
     <a href="#" class="present-link">
         <div class="present-container">
-            <img src="images/present.png" alt="present" class="present-image">
+            <img src="../images/present.png" alt="present" class="present-image">
             <div class="order-present">
-                <img src="images/present-order.png" alt="present-order" class="order-present-img">
+                <img src="../images/present-order.png" alt="present-order" class="order-present-img">
                 <span class="order-present-text">
             Оформите заказ<br> и получите подарок!
                 </span>
@@ -261,16 +252,16 @@
     </a>
 
 </div>
+<script>
+    document.getElementById('burger').onclick = function () {
+        document.getElementById('menu').classList.add('open')
 
-<div class="loader-container">
-    <span class="loader"></span>
-</div>
-
-
-
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/jquery-mask-plugin/dist/jquery.mask.js"></script>
-<script src="scripts/script.js"></script>
+    }
+    document.querySelectorAll('#menu *').forEach((item)=>{
+        item.onclick = () =>{
+            document.getElementById('menu').classList.remove('open');
+        }
+    })
+</script>
 </body>
 </html>
