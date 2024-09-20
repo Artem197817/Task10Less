@@ -18,6 +18,7 @@
 @gradient2: rgb(215, 72, 92);
 @button-shadow: rgba(130, 19, 40, 0.5);
 @advantage-icon-color: #eba8be;
+@menu-item-color: #770b1d;
 
 * {
   padding: 0;
@@ -86,6 +87,7 @@ body {
     color: @white;
     font-weight: 700;
   }
+
 }
 
 .container {
@@ -103,7 +105,6 @@ body {
     padding-bottom: 33px;
     display: flex;
     align-items: center;
-  }
 
   .burger {
     display: none;
@@ -135,13 +136,14 @@ body {
           text-decoration: none;
           font-size: 14px;
           letter-spacing: 1px;
-          color: #770b1d;
+          color: @menu-item-color;
           font-weight: 500;
           font-family: Gilroy, sans-serif;
         }
       }
     }
   }
+}
 
   .phone {
     margin-left: 27.86%;
@@ -158,6 +160,23 @@ body {
     padding-bottom: 108px;
     .flex-align-center();
     justify-content: space-between;
+    position: relative;
+    button{
+      &.theme-button{
+        background-color: @pink;
+        color: @menu-item-color;
+        background-image: none;
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+        position: absolute;
+        font-family: Gilroy, sans-serif;
+        top: 0px;
+        right: 20px;
+        max-width: 150px;
+        font-weight: 500;
+      }
+    }
 
     .title-info-title {
       position: relative;
@@ -722,6 +741,6 @@ body {
 }
 
 @import 'adaptive.less';
-
+@import 'theme.less';
 
 

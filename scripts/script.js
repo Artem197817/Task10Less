@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    new WOW({
+        animateClass: 'animate__animated',
+    }).init();
+    
     document.getElementById('burger').onclick = function () {
         document.getElementById('menu').classList.add('open')
 
@@ -76,3 +80,17 @@ function successInfo(message, form) {
     $('.order-success-info').css('display', 'flex').text(message);
     form.reset();
 }
+
+let isDark = false;
+
+$('.theme-button').click(()=>{
+    const body = $('body');
+    if(isDark) {
+        body.removeClass('dark-theme')
+        isDark = false;
+    }else{
+       body.addClass('dark-theme')
+       isDark = true;
+    }
+    
+});

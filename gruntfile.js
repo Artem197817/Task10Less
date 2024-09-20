@@ -1,8 +1,9 @@
 module.exports = function(grunt) {
-    // Загружаем необходимые плагины
-    grunt.loadNpmTasks('grunt-contrib-less');
 
-    // Конфигурация задач
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+
     grunt.initConfig({
         less: {
             development: {
@@ -12,29 +13,22 @@ module.exports = function(grunt) {
                     optimization: 2
                 },
                 files: {
-
                     "dist/styles/style.css": "src/styles/style.less"
                 }
             }
-        }
+        },
+
+        watch: {
+            styles: {
+                files: ['src/styles/*.less'],
+                tasks: ['less'],
+                options: {
+                    spawn: false,
+                },
+            },
+        },
     });
 
-    // Определяем задачу по умолчанию
-    grunt.registerTask('default', ['less']);
+    // Default task(s)
+    grunt.registerTask('default', ['less', 'watch']);
 };
-// grunt.loadNpmTasks('grunt-contrib-watch');
-//
-// grunt.initConfig({
-//     watch: {
-//         styles: {
-//             files: ['path/to/**/*.less'], // Укажите путь к вашим .less файлам
-//             tasks: ['less'],
-//             options: {
-//                 spawn: false,
-//             },
-//         },
-//     },
-// });
-//
-// // Задача по умолчанию с watch
-//grunt.registerTask('default', ['less', 'watch']);

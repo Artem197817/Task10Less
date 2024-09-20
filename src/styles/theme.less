@@ -1,30 +1,211 @@
 
-@dark-maroon-color: rgb(65, 30, 6);
-@white: rgb(255, 239, 239);
-@maroon: rgb(116, 9, 27);
-@pink: rgb(252, 153, 166);
-@maroon-light: #64101f;
-@pink-rights: #eb97a2;
-@pink-footer: #a85b67;
-@background-white: rgb(243, 202, 202);
-@order-input-placeholder-color: rgb(87, 9, 24);
-@order-black: rgb(27, 13, 7);
-@gradient1:rgb(53, 8, 18);
-@gradient2:rgb(175, 57, 72);
-@button-shadow:rgba(88, 16, 29, 0.5);
-@advantage-icon-color:#e293ad;
+@dark-dark-maroon-color: rgb(65, 30, 6);
+@dark-white: rgb(255, 239, 239);
+@dark-maroon: rgb(116, 9, 27);
+@dark-pink: rgb(252, 153, 166);
+@dark-maroon-light: #64101f;
+@dark-pink-rights: #eb97a2;
+@dark-pink-footer: #a85b67;
+@dark-background-white: rgb(243, 202, 202);
+@dark-order-input-placeholder-color: rgb(87, 9, 24);
+@dark-order-black: rgb(27, 13, 7);
+@dark-gradient1:rgb(53, 8, 18);
+@dark-gradient2:rgb(175, 57, 72);
+@dark-button-shadow:rgba(88, 16, 29, 0.5);
+@dark-advantage-icon-color:#e293ad;
+@dark-menu-item-color: #5f0a18;
 
-@dark-maroon-color: rgb(51, 25, 7);
-@white: rgb(255, 255, 255);
-@maroon: rgb(119, 10, 29);
-@pink: rgb(235, 168, 177);
-@maroon-light: #821328;
-@pink-rights: #dfa5ad;
-@pink-footer: #c0707c;
-@background-white: rgb(255, 239, 239);
-@order-input-placeholder-color: rgb(118, 12, 34);
-@order-black: rgb(18, 10, 6);
-@gradient1: rgb(113, 8, 30);
-@gradient2: rgb(215, 72, 92);
-@button-shadow: rgba(130, 19, 40, 0.5);
-@advantage-icon-color: #eba8be;
+
+body{
+    &.dark-theme{
+        .phone {
+            color: @dark-white;
+          }
+          
+          .button {
+            color: @dark-white;
+            background-image: -moz-linear-gradient(90deg, @dark-gradient1 0%, @dark-gradient2 100%);
+            background-image: -webkit-linear-gradient(90deg, @dark-gradient1 0%, @dark-gradient2 100%);
+            background-image: -ms-linear-gradient(90deg, @dark-gradient1 0%, @dark-gradient2 100%);
+
+            &:hover {
+              box-shadow: 0 5px 9px 1px @dark-button-shadow;
+            }
+          
+            a {
+              color: @dark-white;
+            }
+          }
+
+          .header {
+            background-color: @dark-pink;
+          
+            .container {
+            .menu {
+              ul {
+                .menu-item {
+
+                  &:hover {
+                    border-bottom: 2px solid @dark-maroon-light;
+                  }
+          
+                  .menu-item-link {
+                    color: @dark-menu-item-color;
+                  }
+                }
+              }
+            }
+        }
+                    }
+          
+          .title {
+            background-color: @dark-pink;
+         
+            .container {
+              button{
+                &.theme-button{
+                  background-color: @dark-pink;
+                  color: @dark-menu-item-color;
+                }
+              }
+              .title-info-title {
+                color: @dark-white;
+              }
+          
+              .title-info-text {
+                color: @dark-white;
+              }
+          
+              .title-image {
+    
+                .title-image-circle-container {
+          
+                  .title-image-circle {
+                    border: 2px solid @dark-maroon-light;
+
+                  }
+                }
+              }
+            }
+          }
+
+          .advantages {
+            background-color: @dark-background-white;
+          
+            .container {
+             .advantages-title {
+                 h2 {
+                  color: @dark-dark-maroon-color;
+                }
+          
+                .advantages-title-text {
+                  color: @dark-dark-maroon-color;
+                }
+              }
+          
+              .advantages-info {
+                .advantage {
+                  .advantage-image {
+                    .advantage-icon {
+                      color: @dark-white;
+                      background-color: @dark-maroon-light;
+                    }
+                  }
+          
+                  &:hover {
+                    .advantage-icon {
+                      background-color: @dark-advantage-icon-color;
+                      color: @dark-maroon-light;
+                    }
+                  }
+          
+                  .advantage-title {
+                    color: @dark-dark-maroon-color;
+                  }
+          
+                  .advantage-text {
+                    color: @dark-dark-maroon-color;
+                  }
+                }
+              }
+            }
+          }
+          
+          .select {
+            background-color: @dark-pink;
+          
+            .container {
+              .select-title {
+                color: @dark-white;
+              }
+              .select-info {
+                .select-info-item {
+                  border-color: @dark-white;
+           
+                  .select-info-item-title {
+                    color: @dark-white;
+                  }
+          
+                  .select-info-item-container {
+          
+                    .select-info-item-text {
+                      color: @dark-white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+          .order {
+            background-color: @dark-background-white;
+          
+            .container {
+                  
+              .order-info {
+                .order-info-title {
+                  color: @dark-dark-maroon-color;
+                }
+          
+                .order-info-text {
+                  color: @dark-dark-maroon-color;
+                }
+          
+                .order-info-form-container {
+                  .order-info-form {
+                    .order-info-small-title {
+                      color: @dark-order-black;
+                    }
+          
+                    .order-info-input {
+                      color: @dark-order-black;
+                      border-color: @dark-maroon-light;
+                      background-color: @dark-background-white;
+          
+                      &::placeholder {
+                        color: @order-input-placeholder-color;
+          
+                      }
+                    }
+                  }
+                  .order-success-info{
+                      color: @dark-dark-maroon-color;
+                  }
+                }
+              }
+            }
+          }
+          
+          
+          .footer {
+            background-color: @dark-pink-footer;
+          
+            .container {
+              .rights {
+                color: @dark-pink-rights;
+              }
+            }
+          }
+                        
+        }      
+}

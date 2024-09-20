@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>macaroons</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../dist/styles/style.css">
-<!--    <link rel="stylesheet" href="styles/adaptive.css">-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -209,15 +210,23 @@
             <div class="order-info-text">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
                 пекаря!
             </div>
-            <form action="#" class="order-info-form">
-                <h3 class="order-info-small-title">Ваш выбор</h3>
-                <input type="text" name="product" class="order-info-input"
-                       placeholder="Напишите, что хотите заказать...">
-                <h3 class="order-info-small-title small-title2 ">Заполните данные для заказа</h3>
-                <input type="text" name="name" class="order-info-input" placeholder="Ваше имя">
-                <input type="text" name="phone" class="order-info-input" placeholder="+375 (__) ___ - __ - __">
-                <button type="submit" class="button order-info-button">Оформить заказ</button>
-            </form>
+            <div class="order-info-form-container">
+                <form action="#" class="order-info-form needs-validation" novalidate>
+                    <h3 class="order-info-small-title ">Ваш выбор</h3>
+                    <input type="text" name="product" class="order-info-input form-control"
+                           placeholder="Напишите, что хотите заказать..." id="inputProduct" required>
+                    <div class="invalid-feedback product">Пожалуйста введите название продукта</div>
+                    <h3 class="order-info-small-title small-title2 ">Заполните данные для заказа</h3>
+                    <input type="text" name="name" class="order-info-input form-control" placeholder="Ваше имя"
+                           id="inputName" required>
+                    <div class="invalid-feedback name">Пожалуйста введите имя</div>
+                    <input type="text" name="phone" class="order-info-input form-control"
+                           placeholder="+375 (__) ___ - __ - __" id="inputPhone" required>
+                    <div class="invalid-feedback phone-client">Пожалуйста введите телефон</div>
+                    <button type="submit" class="button order-info-button">Оформить заказ</button>
+                </form>
+                <div class="order-success-info">3</div>
+            </div>
             <div class="order-image-motion small-berry">
                 <img src="../images/berry-small.png" alt="клубника" class="order-image-motion-img">
             </div>
@@ -252,16 +261,16 @@
     </a>
 
 </div>
-<script>
-    document.getElementById('burger').onclick = function () {
-        document.getElementById('menu').classList.add('open')
 
-    }
-    document.querySelectorAll('#menu *').forEach((item)=>{
-        item.onclick = () =>{
-            document.getElementById('menu').classList.remove('open');
-        }
-    })
-</script>
+<div class="loader-container">
+    <span class="loader"></span>
+</div>
+
+
+
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+<script src="jquery/dist/jquery.js"></script>
+<script src="jquery-mask-plugin/dist/jquery.mask.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
 </html>

@@ -281,6 +281,13 @@
       display: block;
       box-sizing: content-box;
 
+      button{
+        &.theme-button{
+          padding: 5px 10px;
+          right: 50px;
+          font-size: 14px;
+        }
+      }
       .title-info {
         text-align: center;
         display: flex;
@@ -293,6 +300,7 @@
           line-height: 40px;
           font-weight: 400;
           margin-bottom: 35px;
+          max-width: 490px;
         }
 
         .title-info-text {
@@ -521,10 +529,27 @@
 
   .title {
     .container {
-      min-height: 600px;
+      padding-top: 20px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      .title-info {
+        .title-info-title {
+          max-width: 315px;
+        }
+
+        .title-info-text {
+          max-width: 290px;
+
+        }
+      }
 
       .title-image {
         top: 440px;
+
       }
     }
   }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>macaroons</title>
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="dist/styles/style.css">
 
@@ -36,10 +37,10 @@
                 </svg>
             </div>
             <ul>
-                <li class="menu-item item1">
+                <li class="menu-item item1 wow animate__fadeInDown">
                     <a href="#" class="menu-item-link">Пироженки</a></li>
-                <li class="menu-item item"><a href="#" class="menu-item-link">О нас</a></li>
-                <li class="menu-item item"><a href="#" class="menu-item-link">Оформить заказ</a></li>
+                <li class="menu-item item wow animate__fadeInDown"><a href="#" class="menu-item-link ">О нас</a></li>
+                <li class="menu-item item wow animate__fadeInDown"><a href="#" class="menu-item-link ">Оформить заказ</a></li>
             </ul>
         </nav>
         <div class="burger" id="burger">
@@ -50,7 +51,8 @@
 </header>
 <section class="title">
     <div class="container">
-        <div class="title-info">
+        <button class="button theme-button" type="button">Изменить тему</button>
+        <div class="title-info wow animate__backInLeft">
             <h1 class="title-info-title">Мягкие французские
                 пироженки Macaroons</h1>
             <div class="title-info-text">Побалуйте себя и своих близких самыми вкусными и ароматными домашними
@@ -60,7 +62,7 @@
                 <a href="#" class="button-link">Выбрать макарун</a>
             </div>
         </div>
-        <div class="title-image">
+        <div class="title-image wow animate__backInRight">
             <img src="images/macaroons-box.png" alt="макаруны" class="title-info-image-img">
             <div class="title-image-circle-container">
                 <div class="title-image-circle circle1"></div>
@@ -83,13 +85,13 @@
                 муки.
             </div>
         </div>
-        <div class="advantages-image">
+        <div class="advantages-image wow animate__rollIn">
             <img src="images/macaroon-big.png" alt="макарун" class="advantages-image-img">
         </div>
         <div class="advantages-info">
             <div class="advantage">
                 <div class="advantage-image">
-                    <div class="advantage-icon">1</div>
+                    <div class="advantage-icon wow animate__zoomIn">1</div>
                 </div>
                 <h3 class="advantage-title">Лучшие продукты</h3>
                 <div class="advantage-text">Мы честно готовим макаруны только из натуральных и качественных продуктов.
@@ -98,7 +100,7 @@
             </div>
             <div class="advantage">
                 <div class="advantage-image">
-                    <div class="advantage-icon">2</div>
+                    <div class="advantage-icon wow animate__zoomIn">2</div>
                 </div>
                 <h3 class="advantage-title">Много вкусов</h3>
                 <div class="advantage-text">Наша задача – предоставить вам широкое разнобразие вкусов.
@@ -107,7 +109,7 @@
             </div>
             <div class="advantage">
                 <div class="advantage-image">
-                    <div class="advantage-icon">3</div>
+                    <div class="advantage-icon wow animate__zoomIn">3</div>
                 </div>
 
                 <h3 class="advantage-title">Бисквитное тесто</h3>
@@ -118,7 +120,7 @@
             </div>
             <div class="advantage">
                 <div class="advantage-image">
-                    <div class="advantage-icon">4</div>
+                    <div class="advantage-icon wow animate__zoomIn">4</div>
                 </div>
                 <h3 class="advantage-title">Честный продукт</h3>
                 <div class="advantage-text">Вкус, качество и безопасность наших пирогов подтверждена декларацией о
@@ -133,8 +135,8 @@
     <div class="container">
         <h2 class="select-title">Выберите свой макарун</h2>
         <div class="select-info">
-            <div class="select-info-item">
-                <div class="select-info-item-image">
+            <div class="select-info-item  wow animate__slideInUp">
+                <div class="select-info-item-image wow animate__slideInDown">
                     <img src="images/macaroon1.png" alt="Макарун" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Макарун с малиной</div>
@@ -148,8 +150,8 @@
                     </div>
                 </div>
             </div>
-            <div class="select-info-item">
-                <div class="select-info-item-image">
+            <div class="select-info-item wow animate__slideInUp">
+                <div class="select-info-item-image wow animate__slideInDown">
                     <img src="images/macaroon2.png" alt="Макарун" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Макарун с манго</div>
@@ -163,8 +165,8 @@
                     </div>
                 </div>
             </div>
-            <div class="select-info-item">
-                <div class="select-info-item-image">
+            <div class="select-info-item wow animate__slideInUp">
+                <div class="select-info-item-image wow animate__slideInDown">
                     <img src="images/macaroon3.png" alt="Пирог" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Пирог с ванилью</div>
@@ -178,8 +180,8 @@
                     </div>
                 </div>
             </div>
-            <div class="select-info-item">
-                <div class="select-info-item-image">
+            <div class="select-info-item wow animate__slideInUp">
+                <div class="select-info-item-image wow animate__slideInDown">
                     <img src="images/macaroon4.png" alt="Пирог" class="select-info-item-img">
                 </div>
                 <div class="select-info-item-title">Пирог с фисташками</div>
@@ -201,11 +203,11 @@
         <div class="order-image-motion big-berry" id="big-berry">
             <img src="images/berry-big.png" alt="клубника" class="order-image-motion-img">
         </div>
-        <div class="order-image">
+        <div class="order-image wow animate__fadeInBottomLeft">
             <img src="images/macaroons.png" alt="макаруны" class="order-image-main">
 
         </div>
-        <div class="order-info">
+        <div class="order-info wow animate__fadeInBottomRight">
             <h2 class="order-info-title">Закажите макарун!</h2>
             <div class="order-info-text">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
                 пекаря!
@@ -271,6 +273,7 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.js"></script>
+<script src="node_modules/wow.js/dist/wow.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>
